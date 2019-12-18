@@ -17,7 +17,7 @@ module.exports.connect = function (url, callback) {
                     callback(false, "Une erreur est survenue lors de la connection : " + err);
                 } else {
 
-                    state.db = client.db("ebantu");
+                    state.db = client.db("bantustore");
                     callback(true, "connection établie avec succès")
                 }
             })
