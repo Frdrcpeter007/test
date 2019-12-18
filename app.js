@@ -5,7 +5,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 var db_js = require("./Models/db");
-var string_con = 'mongodb://@localhost:27017/ebantu?authSource=admin';
+var string_con = 'mongodb://bantuAdmin:bantu#Admin2020@ds353338.mlab.com:53338/bantustoredb';
 
 db_js.connect(string_con, function (isConnected, resultConnect) {
 
