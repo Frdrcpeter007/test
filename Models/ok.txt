@@ -1,0 +1,26 @@
+db.getCollection('operation_produit').find({"type": "vente"})
+
+db.operation_produit.aggregate([{
+                "$match": {
+                    "type": "vente"
+                }
+            },
+            {
+                "$group": {
+                    "_id": { "id" :  "$date"},
+                    "produit":{
+                       "$addToSet&" : {
+                            "id_produit" : "$id_produit"
+                           }
+                     }
+                }
+            },
+            {
+                "$limit": 4
+            },
+            {
+                "$sort": {
+                    "date": -1
+                }
+            }
+        ])
