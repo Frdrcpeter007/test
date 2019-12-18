@@ -2,7 +2,7 @@
 //cette variable est destinée à contenir une référence à
 //l'objet collection qui dérivera de "db_js"
 var db_js = require("./db"),
-    bcrypt = require("bcrypt");
+    bcrypt = require("bcryptjs");
 
 var collection = {
     value: null

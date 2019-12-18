@@ -3,7 +3,7 @@
 //l'objet collection qui dérivera de "db_js"
 var db_js = require("./db"),
     nodeMailer = require("nodemailer"),
-    bcrypt = require("bcrypt"),
+    bcrypt = require("bcryptjs"),
     testyfile = require("testyfile"),
     fs = require("fs");
 
