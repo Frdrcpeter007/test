@@ -4,8 +4,22 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+var db_js = require("./Models/db");
+var string_con = 'mongodb://@localhost:27017/ebantu?authSource=admin';
+
+db_js.connect(string_con, function (isConnected, resultConnect) {
+
+    if (isConnected) {
+        console.log(resultConnect)
+    } else {
+        console.log(resultConnect);
+    }
+
+})
+
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var categoryRouter = require('./routes/categorie_router');
 
 var app = express();
 
@@ -21,6 +35,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/category', categoryRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
