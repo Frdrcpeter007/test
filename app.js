@@ -20,7 +20,7 @@ db_js.connect(string_con, function (isConnected, resultConnect) {
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var categoryRouter = require('./routes/categorie_router');
-var agent = require("./routes/agent_router");
+/*var agent = require("./routes/agent_router");
 var client = require("./routes/client_router");
 var favorite = require("./routes/favoris_router");
 var product = require("./routes/produit_router");
@@ -45,10 +45,10 @@ var beneficiaire_commande = require("./routes/beneficiaire_commande_router");
 var produit_dealer_prix = require("./routes/produit_dealer_prix_router");
 var produit_dealer = require("./routes/produit_dealer_router");
 var unite = require("./routes/unite_mesure_router");
-var mediaProductRouter = require("./routes/media_produit_router");
+var mediaProductRouter = require("./routes/media_produit_router");*/
 
 /* Pour l'administration */
-var notification_admin = require("./routes/admin/notification_admin_router");
+/*var notification_admin = require("./routes/admin/notification_admin_router");
 var client_admin = require("./routes/admin/client_admin_router");
 var dealer_admin = require("./routes/admin/dealer_admin_router");
 var categorie_admin = require("./routes/admin/categorie_admin_router");
@@ -63,7 +63,7 @@ var role_admin = require("./routes/admin/role_admin_router");
 var message_admin = require("./routes/admin/message_admin_router");
 var alerte_admin = require("./routes/admin/alerte_admin_router");
 var ligne_livraison_admin = require("./routes/admin/ligne_livraison_admin_router");
-var taux_admin_router = require("./routes/admin/taux_admin_router");
+var taux_admin_router = require("./routes/admin/taux_admin_router");*/
 
 var app = express();
 
@@ -77,7 +77,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use(function (req, res, next) {
+/*app.use(function (req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     next();
@@ -129,7 +129,7 @@ app.use("/admin/role", role_admin);
 app.use("/admin/message", message_admin);
 app.use("/admin/alerte", alerte_admin);
 app.use("/admin/ligne_livraison", ligne_livraison_admin);
-app.use("/admin/taux", taux_admin_router);
+app.use("/admin/taux", taux_admin_router);*/
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
