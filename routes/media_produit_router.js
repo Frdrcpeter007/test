@@ -1,8 +1,8 @@
 var express = require('express');
 var router = express.Router();
 
-var model = require("../models/media_produit_dao");
-var modelProduit = require("../models/produit_dao");
+var model = require("../Models/media_produit_dao");
+var modelProduit = require("../Models/produit_dao");
 var db = require("../Models/db");
 
 router.post("/create", (req, res) => {
