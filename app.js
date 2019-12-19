@@ -86,7 +86,7 @@ app.use(function (req, res, next) {
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/category', categoryRouter);
-/*app.use("/agent", agent);
+app.use("/agent", agent);
 app.use("/client", client);
 app.use("/favoris", favorite);
 app.use("/product", product);
@@ -129,7 +129,7 @@ app.use("/admin/role", role_admin);
 app.use("/admin/message", message_admin);
 app.use("/admin/alerte", alerte_admin);
 app.use("/admin/ligne_livraison", ligne_livraison_admin);
-app.use("/admin/taux", taux_admin_router);*/
+app.use("/admin/taux", taux_admin_router);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
