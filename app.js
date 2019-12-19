@@ -48,7 +48,7 @@ var unite = require("./routes/unite_mesure_router");
 var mediaProductRouter = require("./routes/media_produit_router");
 
 /* Pour l'administration */
-/*var notification_admin = require("./routes/admin/notification_admin_router");
+var notification_admin = require("./routes/admin/notification_admin_router");
 var client_admin = require("./routes/admin/client_admin_router");
 var dealer_admin = require("./routes/admin/dealer_admin_router");
 var categorie_admin = require("./routes/admin/categorie_admin_router");
@@ -63,7 +63,7 @@ var role_admin = require("./routes/admin/role_admin_router");
 var message_admin = require("./routes/admin/message_admin_router");
 var alerte_admin = require("./routes/admin/alerte_admin_router");
 var ligne_livraison_admin = require("./routes/admin/ligne_livraison_admin_router");
-var taux_admin_router = require("./routes/admin/taux_admin_router");*/
+var taux_admin_router = require("./routes/admin/taux_admin_router");
 
 var app = express();
 
