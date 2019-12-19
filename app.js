@@ -20,7 +20,7 @@ db_js.connect(string_con, function (isConnected, resultConnect) {
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var categoryRouter = require('./routes/categorie_router');
-/*var agent = require("./routes/agent_router");
+var agent = require("./routes/agent_router");
 var client = require("./routes/client_router");
 var favorite = require("./routes/favoris_router");
 var product = require("./routes/produit_router");
@@ -45,7 +45,7 @@ var beneficiaire_commande = require("./routes/beneficiaire_commande_router");
 var produit_dealer_prix = require("./routes/produit_dealer_prix_router");
 var produit_dealer = require("./routes/produit_dealer_router");
 var unite = require("./routes/unite_mesure_router");
-var mediaProductRouter = require("./routes/media_produit_router");*/
+var mediaProductRouter = require("./routes/media_produit_router");
 
 /* Pour l'administration */
 /*var notification_admin = require("./routes/admin/notification_admin_router");
